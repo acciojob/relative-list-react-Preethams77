@@ -1,7 +1,7 @@
-import React,{useState}from 'react'
+import React, {useState} from 'react';
 
 const App = () => {
-  const[relatives,setRelatives]=useState(["motherinlaw","fatherinlaw","brotherinlaw","sisterinlaw"]);
+  const[relatives]=useState(["motherinlaw","fatherinlaw","brotherinlaw","sisterinlaw"]);
   return (
     <div id="main">
       <ol>
