@@ -1,13 +1,13 @@
 import React, {useState} from 'react';
 
 const App = () => {
-  const[relatives]=useState(["motherinlaw","fatherinlaw","brotherinlaw","sisterinlaw"]);
+  const[relativeListItem]=useState(["motherinlaw","fatherinlaw","brotherinlaw","sisterinlaw"]);
   return (
     <div id="main">
       <ol>
-        {relatives.map((relative,idx)=>{
-          console.log(relative + idx);
-          return <li key={relative + idx}>Name:{relative}</li>;
+        {relativeListItem.map((relativeListItem,idx)=>{
+          console.log(relativeListItem + idx);
+          return <li key={relativeListItem + idx}>Name:{relativeListItem}</li>;
         })}
       </ol>
               
