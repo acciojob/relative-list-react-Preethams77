@@ -7,7 +7,7 @@ const App = () => {
       <ol id={"relativeList"}>
         {relativeListItem.map((relativeListItem,idx)=>{
           console.log(relativeListItem + idx);
-          return <li id={relativeListItem + idx}>Name:{relativeListItem}</li>;
+          return <li id={`relativeListItem${idx+1}`}>Name:{relativeListItem}</li>;
         })}
       </ol>
               
